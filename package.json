@@ -1,5 +1,5 @@
 {
-  "name": "@hyperion/poker-hand",
+  "name": "@splithyperion56/poker-hand",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "jest",
-    "game": "node index.js"
+    "game": "node play.js"
   },
   "dependencies": {
     "pokersolver": "^2.1.4"
@@ -30,6 +30,10 @@
   "description": "Simple package to create a poker hand creator and evaluator",
   "directories": {
     "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JordanHopcroft/poker-hand-assessment.git"
   },
   "keywords": [
     "poker"

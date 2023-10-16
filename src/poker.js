@@ -17,6 +17,7 @@ class Poker {
    * @param {number} props.shuffleCount - The number of times to shuffle the deck. Defaults to the value of this.#shuffleCount.
    * @param {number} props.handSize - The size of the hand. Defaults to the value of this.#handSize.
    */
+  // TODO: check handSize is of valid length for any gametype of poker
   constructor(props = { shuffleCount: this.#shuffleCount, handSize: this.#handSize }) {
     const { shuffleCount, handSize } = props;
     this.#shuffleCount = shuffleCount ?? this.#shuffleCount;
@@ -71,7 +72,7 @@ class Poker {
     if (this.#hand.length === 0) {
       throw new Error("Hand is empty");
     }
-    EvalHand(this.#hand);
+    evalHand(this.#hand);
   }
 
   /**

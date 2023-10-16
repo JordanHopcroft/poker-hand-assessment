@@ -11,15 +11,56 @@ A simple node package to generate a poker hand (with options for size) and evalu
 
 ## Installation
 
-Install from npm using 'npm i @hyperion/poker-hand'
+```
+npm install @splithyperion56/poker-hand
+```
 
-1. Clone the repository: `git clone <repository-url>`
+Or for a local version
+
+1. Clone the repository: `git clone https://github.com/JordanHopcroft/poker-hand-assessment`
 2. Install the dependencies: `npm install`
+3. Create link to this package: 'npm link <package-name>'
+4. Go to directory to use this package: 'npm link <package-name>'
 
 ## Usage
+```javascript
+import Poker from 'poker-hand'
+```
+Or if using cjs
+```javascript
+var Poker = require('poker-hand')
+```
 
-1. Run the application: `npm start`
-2. Open your web browser and navigate to `http://localhost:3000`
+For testing the local version you can run:
+```
+npm run game
+```
+
+This will run a quick simulation.
+
+## API
+### play({shuffleCount, handSize})
+* **shuffleCount**: `Number | null` : How many times to shuffle the deck before drawing cards. Default: 3.
+* **handSize**: `Number | null`: How many cards to draw. Default: 5.
+
+Simulates a quick round of poker by shuffling a deck, drawing 5 cards to 
+display and then ranks the hand that was drawn.
+
+### shuffle(times)
+- **times**: `Number` Number of times to shuffle the deck. Default: 3
+
+Shuffles the deck of cards and clears the current hand.
+
+### drawCards(handSize)
+- **handSize**: `Number` Size of the hand to draw. Default: 5
+
+Draws the first 5 cards from the deck.
+
+### evalHand()
+Returns the ranking of the current hand.
+
+### showHand()
+Prints the current hand to console.
 
 ## Contributing
 
