@@ -19,8 +19,8 @@ Or for a local version
 
 1. Clone the repository: `git clone https://github.com/JordanHopcroft/poker-hand-assessment`
 2. Install the dependencies: `npm install`
-3. Create link to this package: 'npm link <package-name>'
-4. Go to directory to use this package: 'npm link <package-name>'
+3. Create link to this package: 'npm link [package-name]'
+4. Go to directory to use this package: 'npm link [package-name]>'
 
 ## Usage
 ```javascript
